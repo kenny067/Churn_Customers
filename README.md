@@ -1,5 +1,4 @@
-
-![Uploading 1st image.png…]()
+![1st image](https://github.com/user-attachments/assets/a57c3a49-c955-4f57-ba3f-4d7e58a8ade8)
 
 # **CHURN_CUSTOMERS**
 ## BUSINESS UNDERSTANDING
@@ -74,8 +73,14 @@ The dataset is clean with 0 missing values
 The column names were separated by space, so we had to replace the spaces with underscore
 ### EDA(Explaratory Data Analysis)
 - Churned Distribution : Visualized the proppotion of churned verses the non churned customer
+ ![univariate](https://github.com/user-attachments/assets/82e931e5-6955-498d-9f93-add925ea7558)
+ 
 - Customer Service Calls & Churn : Found that higher customer service interactions correlate with higher churn rates.
+![bivariate](https://github.com/user-attachments/assets/6543b036-a7ed-4535-8ae0-e346a535338f)
+
 - International Plan & Churn : Customers with international plans showed varying churn tendancies
+  ![multivariate](https://github.com/user-attachments/assets/b42e97ae-7f37-4349-867e-5112ee537e21)
+
 - Handled Class Imbalanced using SMOTE to ensure balanced model learning.
 - 
 ## MODEL DEVELOPMENT
@@ -97,4 +102,15 @@ The column names were separated by space, so we had to replace the spaces with u
 The model is now detecting churn well(72% recall for class 1 and 88% recall for class 0 ) while keeping the overall accuracy of 86%.
 
 It is a good balance between detecting churners and avoiding too many false alarms.
+
+## Files in This Repository
+- churn_customer.ipyn : Jupyter Notebook containg the data analysis  and model training.
+- churn presentation.pdf : Presentation summarizing the analysis with non-technical slides
+- churn_dashboard : A tableau dashboard showing visual of the analysis
+
+## AUTHOR
+KENNEDY KARIUKI
+LINKEDIN :https://www.linkedin.com/in/kennedy067/
+GITHUB : https://github.com/kenny067/Churn_Customers/edit/main/README.md
+
 ![thank you](https://github.com/user-attachments/assets/35af73cf-6934-4d9c-92f1-2524145fc6aa)
