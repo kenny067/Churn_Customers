@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-![alt text](<images/1st image.png>)
-=======
 
 ![Uploading 1st image.png…]()
->>>>>>> 03a0876ef4a8abc3a65055380c85453a07ecb6dc
+
 # **CHURN_CUSTOMERS**
 ## BUSINESS UNDERSTANDING
 Syria Tel, a telecommunication company, wants to predict customer churn. Identifying customers who are likely to stop using their services soon. Churn represents a major financial challenge, as acquiring new customers is often more expensive than retaining existing ones. By analyzing customer data, Syria Tel can devolop targeted strategies to improve customer retention and reduce revenue loss
