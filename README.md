@@ -6,11 +6,16 @@
 Syria Tel, a telecommunication company, wants to predict customer churn. Identifying customers who are likely to stop using their services soon. Churn represents a major financial challenge, as acquiring new customers is often more expensive than retaining existing ones. By analyzing customer data, Syria Tel can devolop targeted strategies to improve customer retention and reduce revenue loss
 ### Project Overview
 In this project we aim to build a classifier to predict whether a customer will ('soon') stop doing business with Syria Tel, a Telecommunications company. 
+This project analyzes customer churn for Syria Tel, a telecommunications company. The goal is to identify patterns and factors contributing to customer churn and develop predictive models to assist in proactive customer retention strategies.
 #### Objective
 - Are churned customers more likely to have high or low usage
 - The corelation between churn and other variables
  ## DATA UNDERSTANDING
  The dataset has 21 variables with a record of 3,333 records
+
+Key variables include customer service calls, international plan subscription, total usage, and tenure.
+
+The target variable is churn, indicating whether a customer has left the service.
  ### Import the libraries
 - **Data manipulation** : pandas, numpy
 - **Visualization** : matplotlib, seaborn
@@ -67,3 +72,29 @@ In this project we aim to build a classifier to predict whether a customer will 
 ### Data Cleaning
 The dataset is clean with 0 missing values
 The column names were separated by space, so we had to replace the spaces with underscore
+### EDA(Explaratory Data Analysis)
+- Churned Distribution : Visualized the proppotion of churned verses the non churned customer
+- Customer Service Calls & Churn : Found that higher customer service interactions correlate with higher churn rates.
+- International Plan & Churn : Customers with international plans showed varying churn tendancies
+- Handled Class Imbalanced using SMOTE to ensure balanced model learning.
+- 
+## MODEL DEVELOPMENT
+![model](https://github.com/user-attachments/assets/2bd3ebe2-8564-402a-943d-8ae25c9a5412)
+
+** Baseline Model** : Logistic Regression was the baseline model followed by the Decision Tree Classifier
+### Logistic Regression
+- Started by splitting the data into 80% traing and 20% testing
+- Fixed the class imbalance using SMOTE and we able to attain a class balance of 2280
+- Feature scalling using the ** standard Scaller** to improve the numerical stability and model perfomance
+- Trained the baseline LR model
+- Evaluated the perfomance of the baseline model where the model provides a better perfomance across both the churn class 1 and the non-churned class
+### Decision Tree Classifier
+- Checked the feature importance to understand which variables contributes the most to my model predictions
+- Evaluated the DT model accuracy and found that it had 100% Training accuracy and 82% Test accuracy, the gap indicates overfitting
+- We needed to reduce overfitting and we ended up Training a Pruned DT and found that the Training accuracy had reduce to 87% and the Test accuracy to increase to 85%.
+- This is gud since there isn't overfitting amd our model
+
+The model is now detecting churn well(72% recall for class 1 and 88% recall for class 0 ) while keeping the overall accuracy of 86%.
+
+It is a good balance between detecting churners and avoiding too many false alarms.
+![thank you](https://github.com/user-attachments/assets/35af73cf-6934-4d9c-92f1-2524145fc6aa)
