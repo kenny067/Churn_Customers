@@ -1,4 +1,5 @@
-![Uploading image.png…]()
+
+![Uploading 1st image.png…]()
 
 # **CHURN_CUSTOMERS**
 ## BUSINESS UNDERSTANDING
