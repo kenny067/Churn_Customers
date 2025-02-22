@@ -87,6 +87,9 @@ The column names were separated by space, so we had to replace the spaces with u
 ![model](https://github.com/user-attachments/assets/2bd3ebe2-8564-402a-943d-8ae25c9a5412)
 
 ** Baseline Model** : Logistic Regression was the baseline model followed by the Decision Tree Classifier
+- Check the correlation of the variable to see which variables has a higher correlation
+  ![correlation](https://github.com/user-attachments/assets/252df51e-d595-4008-a91d-812ae5901808)
+
 ### Logistic Regression
 - Started by splitting the data into 80% traing and 20% testing
 - Fixed the class imbalance using SMOTE and we able to attain a class balance of 2280
@@ -94,7 +97,9 @@ The column names were separated by space, so we had to replace the spaces with u
 - Trained the baseline LR model
 - Evaluated the perfomance of the baseline model where the model provides a better perfomance across both the churn class 1 and the non-churned class
 ### Decision Tree Classifier
-- Checked the feature importance to understand which variables contributes the most to my model predictions
+- Checked the feature importance to understand which variables contributes the most to my model predictions.
+![Feature importance](https://github.com/user-attachments/assets/842f4701-b3b5-4385-8055-e0a73460a6fb)
+  
 - Evaluated the DT model accuracy and found that it had 100% Training accuracy and 82% Test accuracy, the gap indicates overfitting
 - We needed to reduce overfitting and we ended up Training a Pruned DT and found that the Training accuracy had reduce to 87% and the Test accuracy to increase to 85%.
 - This is gud since there isn't overfitting amd our model
@@ -102,6 +107,8 @@ The column names were separated by space, so we had to replace the spaces with u
 The model is now detecting churn well(72% recall for class 1 and 88% recall for class 0 ) while keeping the overall accuracy of 86%.
 
 It is a good balance between detecting churners and avoiding too many false alarms.
+![churn](https://github.com/user-attachments/assets/fa917f20-7638-4e2f-9592-7270fc9db54d)
+
 
 ## Files in This Repository
 - churn_customer.ipyn : Jupyter Notebook containg the data analysis  and model training.
@@ -109,8 +116,8 @@ It is a good balance between detecting churners and avoiding too many false alar
 - churn_dashboard : A tableau dashboard showing visual of the analysis
 
 ## AUTHOR
-KENNEDY KARIUKI
-LINKEDIN :https://www.linkedin.com/in/kennedy067/
-GITHUB : https://github.com/kenny067/Churn_Customers/edit/main/README.md
+- KENNEDY KARIUKI
+- LINKEDIN :https://www.linkedin.com/in/kennedy067/
+- GITHUB : https://github.com/kenny067/Churn_Customers/edit/main/README.md
 
 ![thank you](https://github.com/user-attachments/assets/35af73cf-6934-4d9c-92f1-2524145fc6aa)
